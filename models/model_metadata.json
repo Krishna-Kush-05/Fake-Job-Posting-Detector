@@ -1,0 +1,28 @@
+{
+    "model": "Linear SVM",
+    "text_features": "title + description",
+    "binary_features": [
+        "telecommuting",
+        "has_company_logo",
+        "has_questions"
+    ],
+    "dropped_columns": [
+        "job_id",
+        "salary_range",
+        "department"
+    ],
+    "tfidf_max_features": 5000,
+    "tfidf_ngram_range": [
+        1,
+        2
+    ],
+    "tfidf_min_df": 3,
+    "test_size": 0.2,
+    "random_state": 42,
+    "duplicate_rows_removed_after_feature_selection": 290,
+    "modeling_rows": 17590,
+    "training_rows": 14072,
+    "testing_rows": 3518,
+    "fraudulent_rows": 856,
+    "genuine_rows": 16734
+}

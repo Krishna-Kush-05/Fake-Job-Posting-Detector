@@ -1,0 +1,96 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environments
+venv/
+.venv/
+env/
+.env/
+ENV/
+
+# =========================
+# Jupyter Notebook
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# Environment / Secrets
+# =========================
+.env
+.env.*
+!.env.example
+
+# =========================
+# Streamlit
+# =========================
+.streamlit/secrets.toml
+
+# =========================
+# Models / Generated Files
+# =========================
+# Ignore trained models if they are large
+# Uncomment these if you DON'T want models in GitHub:
+# models/*.pkl
+# models/*.joblib
+# models/*.h5
+# models/*.keras
+
+# =========================
+# Data
+# =========================
+# Raw datasets
+data/raw/
+*.csv
+*.xlsx
+*.xls
+
+# Keep important small/sample datasets if needed
+!data/sample/
+!data/sample/*.csv
+
+# =========================
+# Logs / Temporary Files
+# =========================
+*.log
+*.tmp
+*.temp
+*.bak
+
+# =========================
+# OS Files
+# =========================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# =========================
+# IDEs
+# =========================
+.vscode/
+.idea/
+*.iml
+
+# =========================
+# Build / Distribution
+# =========================
+build/
+dist/
+*.egg-info/
+
+# =========================
+# Testing / Coverage
+# =========================
+.pytest_cache/
+.coverage
+htmlcov/
+
+# =========================
+# Miscellaneous
+# =========================
+*.swp
+*.swo
