@@ -14,11 +14,6 @@ env/
 ENV/
 
 # =========================
-# Jupyter Notebook
-# =========================
-.ipynb_checkpoints/
-
-# =========================
 # Environment / Secrets
 # =========================
 .env
@@ -39,19 +34,6 @@ ENV/
 # models/*.joblib
 # models/*.h5
 # models/*.keras
-
-# =========================
-# Data
-# =========================
-# Raw datasets
-data/raw/
-*.csv
-*.xlsx
-*.xls
-
-# Keep important small/sample datasets if needed
-!data/sample/
-!data/sample/*.csv
 
 # =========================
 # Logs / Temporary Files
