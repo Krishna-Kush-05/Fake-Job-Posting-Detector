@@ -231,20 +231,15 @@ metrics = load_metrics()
 # NLP SETUP
 # =========================================================
 
-try:
-    stop_words = set(stopwords.words("english"))
-except LookupError:
-    st.error(
-        "NLTK stopwords are missing. Run:\n\n"
-        "python -c \"import nltk; "
-        "nltk.download('stopwords'); "
-        "nltk.download('wordnet'); "
-        "nltk.download('omw-1.4')\""
-    )
-    st.stop()
+import nltk
 
+# Download required NLTK resources on Streamlit Cloud
+nltk.download("stopwords", quiet=True)
+nltk.download("wordnet", quiet=True)
+nltk.download("omw-1.4", quiet=True)
+
+stop_words = set(stopwords.words("english"))
 lemmatizer = WordNetLemmatizer()
-
 
 # =========================================================
 # TEXT PREPROCESSING
